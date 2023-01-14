@@ -4,7 +4,7 @@ const { Client } = require('pg');
 const clientGenerator = (database, user, password) => {
   return new Client({
     user: user,
-    host: 'localhost',
+    host: 'postgresdb',
     database: database,
     password: password,
     port: '5432'
