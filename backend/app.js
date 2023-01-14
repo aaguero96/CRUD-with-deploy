@@ -3,6 +3,8 @@ const usersRouter = require('./router/users');
 
 const app = express();
 
+app.get('/', (_, res) => res.json('Bem vindo'))
+
 app.use('/users', usersRouter);
 
 app.listen(3000, () => {
